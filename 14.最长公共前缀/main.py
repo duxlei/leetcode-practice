@@ -20,7 +20,7 @@ https://leetcode-cn.com/problems/longest-common-prefix/
 class Solution(object):
   def longestCommonPrefix(self, strs):
     if len(strs) < 2:
-      return strs[0] if bool(strs) ''
+      return strs[0] if bool(strs) else ''
     sets = set()
     for i in xrange(len(strs) - 1):
       for j in xrange(i + 1, len(strs)):
